@@ -73,8 +73,13 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section {
+ {
   padding: 120px 0;
+}
+@media only screen and (max-width: 480px) and (min-width: 479px) {
+  .section {
+    width: 480px;
+  }
 }
 .container {
   padding-left: 15px;
@@ -83,6 +88,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen  and (max-width: 480px) and (min-width: 479px) {
+  .container{
+    width: 480px;
+  }
+} 
+
 .link {
   text-decoration: none;
 }
@@ -517,14 +528,21 @@ fill:#fff;
 
 .container-m {
   box-sizing: border-box;
-  display: inline-flex;
+  display: flex;
   align-items: baseline;
   list-style: none;
   gap: 24px;
 }
 
+@media screen and (max-width: 480px) {
+  .container-m{
+    width: ;
+    flex-direction: column;
+  
+  }
+}
 
-.weig_li {
+{
   flex-basis: calc((100% - 24px * 3) / 4);
 }
 
