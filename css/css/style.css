@@ -882,7 +882,7 @@ section {
 
   .container-team-card {
     display: flex;
-    width: 480px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
