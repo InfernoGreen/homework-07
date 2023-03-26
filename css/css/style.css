@@ -142,6 +142,7 @@ section {
 .header-container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header {
@@ -161,7 +162,14 @@ section {
   text-decoration: none;
   padding: 24px 0;
   margin-right: 76px;
-}
+}@media  screen and (min-width: 768px) {
+  .logo {
+    margin-right: auto;
+}}@media  screen and (min-width: 1200px) {
+    .logo {
+      margin-right: auto;
+  }
+    }
 
 .logo span {
   color: #2e2f42;
@@ -196,16 +204,33 @@ section {
   color: var(--hover-color);
 
 }
-
-
 .link-menu:hover,
 .link-menu:focus {
   color: var(--hover-color);
-
-
 }
 
+.burger_btn {
+  border: none;
+  position: absolute;
+  top:0 ;
+  right: 50px; 
+}@media  screen and (min-width: 768px) {
+   .burger_btn{
+    display: none;
+}}@media  screen and (min-width: 1200px) {
+   .burger_btn{
+      display: none;
+  }
+    }
 
+
+.burger_svg {
+  
+  
+}
+.burger_use{
+  stroke: #000;
+}
 
 .header-menu li:not(:last-child) {
   
@@ -216,23 +241,22 @@ section {
 }
 @media  screen and (min-width: 480px) {
   .header-menu{
-  
+    
   }
 }@media  screen and (min-width: 768px) {
-  .header-menu {
-  
+  .header-menu {display: flex;
 }
   }
 @media screen and (min-width: 1200px) {
   .header-menu {
    display: flex;
-   gap: 10px;
+   gap: 10;
   }
 }
 
 .navig_menu {
   display: inline-flex;
-
+  gap:40px
 
 }
 
@@ -240,7 +264,14 @@ section {
   list-style: none;
   display: flex;
   padding-right: 30px;
-
+}@media screen and (min-width: 768px) {
+  .adres_menu {
+  list-style: none;
+  display: flex;
+  padding-right: 30px;
+  flex-direction: column;
+  margin-left: auto;
+}
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ADDRESS*/
@@ -250,7 +281,18 @@ section {
 
 .header-adr {
   margin-left: auto;
-}
+  display: none;
+}@media screen and (min-width: 768px) {
+ .header-adr {
+  margin-left: auto;
+  display: flex;
+
+}}
+@media screen and (min-width: 1200px) {
+  .header-adr{
+  margin-left: auto;
+  display: flex;
+}}
 
 .position-adres {
   margin-right: 40px;
@@ -882,7 +924,7 @@ section {
 
   .container-team-card {
     display: flex;
-    width: 100%;
+    width: 480px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
