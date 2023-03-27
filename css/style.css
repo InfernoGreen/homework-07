@@ -1402,7 +1402,7 @@ color: #434455;
 .input-footer {
   outline: transparent;
   color: white;
-  padding: 0 16px;
+  padding-left: 15px;
   height: 40px;
   width: 398px;
   background-color: #2e2f42;
