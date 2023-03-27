@@ -1267,6 +1267,7 @@ color: #434455;
 .footer-stile_ul {
   display: flex;
   gap: 16px;
+  margin-bottom: 72px;
 }
 
 .container-footer {
@@ -1274,7 +1275,7 @@ color: #434455;
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin-bottom: 72px;
+  
 }
 @media screen and (min-width: 768px) {
   .container-footer {
