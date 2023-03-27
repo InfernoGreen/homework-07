@@ -261,16 +261,35 @@ section {
   list-style: none;
   display: flex;
   padding-right: 30px;
-}
+  flex-direction: row;
+
+}@media screen and (min-width: 480px) {
+  .adres_menu {
+    list-style: none;
+    display: flex;
+    padding-right: 30px;
+    margin-left: auto;
+    flex-direction:column ;
+  }}
 @media screen and (min-width: 768px) {
   .adres_menu {
     list-style: none;
     display: flex;
     padding-right: 30px;
-    flex-direction: column;
     margin-left: auto;
+    flex-direction:column ;
   }
-}
+  }
+  @media screen and (min-width: 1200px) {
+    .adres_menu {
+      
+      list-style: none;
+    
+      flex-direction: row;
+      row-gap: 40px;
+  }
+  }
+
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>ADDRESS*/
 .activ {
@@ -291,6 +310,7 @@ section {
   .header-adr {
     margin-left: auto;
     display: flex;
+    
   }
 }
 
@@ -397,7 +417,7 @@ color: #434455;
 .nav-adr-mm {
   width: 100%;
 }
-.adres_menu {
+.adres_menu_mob {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
