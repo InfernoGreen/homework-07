@@ -1036,7 +1036,7 @@ color: #434455;
 @media screen and (min-width: 1200px) {
   .wawdoing.section {
     display: block;
-    margin: 120px 0;
+    margin: 0 0;
   }
 }
 
