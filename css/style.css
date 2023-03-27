@@ -841,6 +841,7 @@ color: #434455;
 @media only screen and (min-width: 1200px) {
   .motivation.section {
     padding-top: 96px;
+    padding-bottom: 0;
   }
 }
 
